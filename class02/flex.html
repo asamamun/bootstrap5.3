@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>display flex</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container">
+        <h1>example 1</h1>
+        <div class="d-flex flex-row mb-3">
+            <div class="p-2">Flex item 1</div>
+            <div class="p-2">Flex item 2</div>
+            <div class="p-2">Flex item 3</div>
+          </div>
+          <h1>example 2:flex-row-reverse </h1>
+          <div class="d-flex flex-row-reverse">
+            <div class="p-2">Flex item 1</div>
+            <div class="p-2">Flex item 2</div>
+            <div class="p-2">Flex item 3</div>
+          </div>
+          <h1>example 3:flex-column</h1>
+          <div class="d-flex flex-column mb-3">
+            <div class="p-2">Flex item 1</div>
+            <div class="p-2">Flex item 2</div>
+            <div class="p-2">Flex item 3</div>
+          </div>
+          <h1>example 4:flex-column-reverse</h1>
+          <div class="d-flex flex-column-reverse">
+            <div class="p-2">Flex item 1</div>
+            <div class="p-2">Flex item 2</div>
+            <div class="p-2">Flex item 3</div>
+          </div>
+          <!-- menu -->
+           <h1>example 5: menu with flex</h1>
+           <ul class="list-unstyled d-flex align-items-center align-self-stretch">
+            <li class="p-1 m-2 bg-info flex-grow-1"><a class="text-decoration-none text-uppercase" href="#"><span class="text-danger" style="font-size: 2em;">h</span>ome</a></li>
+            <li class="p-3 m-2 bg-info">About</li>
+            <li class="p-3 m-2 bg-info">Services</li>
+            <li class="p-3 m-2 bg-info">Contact</li>            
+           </ul>
+           <ul class="list-unstyled d-flex justify-content-center">
+            <li class="p-3 bg-info">Home</li>
+            <li class="p-3 bg-info">About</li>
+            <li class="p-3 bg-info">Services</li>
+            <li class="p-3 bg-info">Contact</li>            
+           </ul>
+           <ul class="list-unstyled d-flex justify-content-end">
+            <li class="p-3 bg-info">Home</li>
+            <li class="p-3 bg-info">About</li>
+            <li class="p-3 bg-info">Services</li>
+            <li class="p-3 bg-info">Contact</li>            
+           </ul>
+           <ul class="list-unstyled d-flex justify-content-between">
+            <li class="p-3 bg-info">Home</li>
+            <li class="p-3 bg-info">About</li>
+            <li class="p-3 bg-info">Services</li>
+            <li class="p-3 bg-info">Contact</li>            
+           </ul>
+           <ul class="list-unstyled d-flex justify-content-around">
+            <li class="p-3 bg-info">Home</li>
+            <li class="p-3 bg-info">About</li>
+            <li class="p-3 bg-info">Services</li>
+            <li class="p-3 bg-info">Contact</li>            
+           </ul>
+           <ul class="list-unstyled d-flex justify-content-evenly">
+            <li class="p-3 bg-info">Home</li>
+            <li class="p-3 bg-info">About</li>
+            <li class="p-3 bg-info">Services</li>
+            <li class="p-3 bg-info">Contact</li>            
+           </ul>
+    </div>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
