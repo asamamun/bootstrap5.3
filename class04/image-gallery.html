@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/css/lightbox.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>how to use image lightbox</h1>
+        <ul>
+            <li>download <a href="https://jquery.com/download/" target="_blank">jquery</a>  and <a href="https://lokeshdhakar.com/projects/lightbox2/" target="_blank">lightbox</a></li>
+            <li>add lightbox.min.css, jquery-3.7.1.min.js and lightbox.min.js in your page</li>
+            <li>add data-lightbox="mygallery" in your image anchor links like this: <br><code>  &lt;a href="../assets/images/DSC_0001.jpg" data-lightbox="mygallery"&gt; &lt;img src="../assets/images/DSC_0001.jpg" alt="" class="img-fluid" width="200px"&gt; &lt;/a&gt;</code></li>
+            <li>your gallery will be grouped based on data-lightbox attribute value</li>
+        </ul>
+        <h3>gallery 1</h3>
+        <a href="../assets/images/DSC_0001.jpg" data-lightbox="mygallery" data-title="gallery 1 image 1">
+            <img src="../assets/images/DSC_0001.jpg" alt="" class="img-fluid" width="200px">
+        </a>
+        <a href="../assets/images/DSC_0002.jpg" data-lightbox="mygallery" data-title="gallery 1 image 2">
+            <img src="../assets/images/DSC_0002.jpg" alt="" class="img-fluid" width="200px">
+        </a>
+        <a href="../assets/images/DSC_0003.jpg" data-lightbox="mygallery" data-title="gallery 1 image 3">
+            <img src="../assets/images/DSC_0003.jpg" alt="" class="img-fluid" width="200px">
+        </a>
+        <h3>gallery 2</h3>
+        <a href="../assets/images/DSC_0004.jpg" data-lightbox="mygallery2" data-title="gallery 2 image 1">
+            <img src="../assets/images/DSC_0004.jpg" alt="" class="img-fluid" width="200px">
+        </a>
+        <a href="../assets/images/DSC_0005.jpg" data-lightbox="mygallery2" data-title="gallery 2 image 2">
+            <img src="../assets/images/DSC_0005.jpg" alt="" class="img-fluid" width="200px">
+        </a>
+        <a href="../assets/images/DSC_0006.jpg" data-lightbox="mygallery2" data-title="gallery 3 image 3">
+            <img src="../assets/images/DSC_0006.jpg" alt="" class="img-fluid" width="200px">
+        </a>
+
+
+    </div>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="dist/js/jquery-3.7.1.min.js"></script>
+    <script src="dist/js/lightbox.min.js"></script>
+
+</body>
+</html>
