@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+
+  </head>
+  <body>
+    <div class="container">
+      <!-- placeholder -->
+       <div id="maincontent" class="d-none">
+        <p class="placeholder-glow">
+            <span class="placeholder col-6"></span>
+            <span class="placeholder w-75"></span>
+            <span class="placeholder" style="width: 25%"></span>
+          </p>
+       </div>
+    </div>
+    <style>
+        #loadingscreen{
+            position: fixed;
+            z-index: 9999;
+            /* width: 100vw;
+            height: 100vh; */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+    <div id="loadingscreen" class="spinner-grow text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const mainContent = document.getElementById('maincontent');
+        const loadingScreen = document.getElementById('loadingscreen');
+        //change data after 5 seconds in #maincontent with a title and paragraph, remove placeholders
+        setTimeout(() => {
+            document.getElementById("maincontent").innerHTML = `
+            <div class="row">
+                <div class="col">
+                    <h1>My title</h1>
+                    <p>My paragraph</p>
+                </div>
+            </div>
+            `;
+        }, 10000);
+        setTimeout(() => {
+            mainContent.classList.remove('d-none');
+            loadingScreen.classList.add('d-none');
+        }, 5000);
+    </script>
+  </body>
+</html>
