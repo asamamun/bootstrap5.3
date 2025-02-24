@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container">
+        <div class="bg-info p-3">
+            <h3>object-fit</h3>
+            <div class="w-100">
+            The issue with object-fit: contain not working as expected inside a Bootstrap col-3 in Bootstrap 5.3.3 likely stems from the fact that object-fit requires the image to have explicit dimensions (i.e., a defined width and height) to function properly. Without these, the browser doesn't know how to scale the image while maintaining its aspect ratio within the container. Bootstrap's grid system (col-3) controls the width of the column, but it doesn’t inherently impose a height or ensure the image adheres to object-fit without additional styling.
+
+Here’s why this happens and how to fix it:
+<br>
+Why It’s Not Working
+<br>
+No Explicit Height: The img element, by default, doesn’t have a height set. object-fit: contain needs both width and height to determine how to fit the image within those boundaries. Without a height, the image may stretch or behave unpredictably. <br>
+Bootstrap’s Responsive Images: In Bootstrap 5, images are often implicitly styled with max-width: 100% and height: auto (via the .img-fluid class or default browser behavior), which can interfere with object-fit if not overridden properly. <br>
+Container Constraints: The col-3 class sets a width (25% of the container), but the image might overflow or not scale correctly if its natural size exceeds the column’s dimensions and no height is defined.
+<hr>
+<mark> Solution</mark> <br>
+To make object-fit: contain work, you need to: <br>
+
+Set an explicit width and height on the image or its container. <br>
+Ensure the image respects the column's boundaries while maintaining its aspect ratio.
+</div>
+        </div>
+        <hr>
+      <div class="row m-3">
+        <div class="col-3 bg-info">
+            <img
+            src="../assets/images/DSC_0001.jpg"
+            class="object-fit-contain border rounded w-100"
+            style="height: 300px;"
+            alt="..."
+          />
+        </div>        
+        <div class="col-3 bg-info">
+            <img
+            src="../assets/images/DSC_0001.jpg"
+            class="object-fit-contain border rounded w-100"
+            style="height: 300px;"
+            alt="..."
+          />
+        </div>        
+        <div class="col-3 bg-primary">
+            <img
+            src="../assets/images/DSC_0001.jpg"
+            class="object-fit-cover border rounded w-100"
+            style="height: 300px;"
+            alt="..."
+          />
+        </div>        
+        <div class="col-3 bg-secondary">
+            <img
+            src="../assets/images/DSC_0001.jpg"
+            class="object-fit-scale border rounded w-100"
+            style="height: 300px;"
+            alt="..."
+          />
+        </div>  
+        <div class="col-3 bg-warning">
+            <img
+            src="../assets/images/DSC_0001.jpg"
+            class="object-fit-fill border rounded w-100"
+            style="height: 300px;"
+            alt="..."
+          />
+        </div>
+
+      </div>
+    </div>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
