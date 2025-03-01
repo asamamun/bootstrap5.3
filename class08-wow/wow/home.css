@@ -1,0 +1,455 @@
+.tesla-container {
+    background: white;
+    max-width: 100%;
+    /* Limits width for better readability */
+    margin: 50px auto;
+    /* Centers the container and adds space above/below */
+    padding: 40px;
+    /* Adds comfortable padding */
+    border-radius: 12px;
+    /* Soft rounded corners */
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Default shadow */
+    text-align: center;
+    /* Centers all text */
+  }
+
+  .tesla-container h1 {
+    font-weight: bold;
+    font-size: 28px;
+    /* Makes heading more professional */
+    margin-bottom: 20px;
+    /* Adds space below heading */
+  }
+
+  .tesla-container p {
+    font-size: 16px;
+    /* Standard readable font size */
+    line-height: 1.6;
+    /* Improves spacing between lines */
+    margin-bottom: 15px;
+    /* Adds spacing between paragraphs */
+    color: #333;
+    /* Professional dark text */
+  }
+
+  .tesla-container:hover {
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
+    /* Stronger shadow on hover */
+    transform: translateY(-5px);
+    /* Smooth pop-up effect */
+  }
+
+
+  /* navbar  */
+
+  /* Navbar Styles */
+.navbar {
+    background-color: #343a40; /* Dark background for the navbar */
+    padding: 1rem 2rem; /* Adjust navbar padding */
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem; /* Slightly bigger font size for the brand */
+    font-weight: 700; /* Bold brand name */
+  }
+  
+  .nav-link {
+    font-size: 1rem; /* Adjust font size */
+    font-weight: 500; /* Slightly bold text for menu items */
+    transition: all 0.3s ease-in-out; /* Smooth transition effect */
+  }
+  
+  /* Hover effect for the menu items */
+  .nav-link:hover {
+    background-color: #495057;
+    color: #f67e53; /* Change color on hover */
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  /* Active link effect */
+  .nav-link.active {
+    background-color: #f72929; /* Active color */
+    font-weight: 700; /* Make active item bold */
+  }
+  
+  /* Dropdown menu styling */
+  .navbar .dropdown-menu {
+    background-color: #343a40; /* Dark background for dropdown */
+    border-radius: 5px; /* Rounded corners for dropdown */
+  }
+  
+  .navbar .dropdown-item {
+    color: #fff; /* White text color for dropdown items */
+    font-size: 1rem; /* Font size for dropdown items */
+  }
+  
+  .navbar .dropdown-item:hover {
+    background-color: #495057; /* Darker background on hover */
+    color: #f98960; /* Text color on hover */
+  }
+  
+  /* Search form button */
+  .btn-outline-light {
+    border-color: #ff7f50; /* Border color for search button */
+    color: #ff7f50; /* Text color */
+  }
+  
+  .btn-outline-light:hover {
+    background-color: #ff7f50; /* Button background color on hover */
+    color: white; /* Text color */
+  }
+  
+  /* Responsive Navbar */
+  @media (max-width: 991px) {
+    .navbar-collapse {
+      margin-top: 1rem;
+    }
+  
+    .navbar-nav {
+      text-align: center;
+    }
+  
+    .navbar-nav .nav-item {
+      margin-bottom: 10px;
+    }
+  
+    .navbar-toggler {
+      border-color: #ff7f50; /* Border color for the toggler */
+    }
+  }
+  
+
+  .whatsnew {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    height: 100vh;
+    /* Make the container take the full viewport height */
+    margin: 0 auto;
+    /* Center the container horizontally (if it has a width) */
+
+  }
+
+  h1 {
+
+    font-weight: 700;
+    text-align: center;
+  }
+
+  /* PART PAGE  */
+
+  .chobi {
+      display: flex;
+      width: 100%;
+      height: 350px;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      }
+
+      .chobi a {
+      /* display:flex ; */
+      /* width: 100%; */
+      height: 100%;
+      }
+
+      .chobi a img {
+      width: 80%;
+      height: 100%;
+      border-radius: 20px;
+      object-fit: cover;
+      border: 2px solid rgba(225, 255, 255, 0.458);
+      transition: .2s ease-in-out;
+      }
+
+      .chobi a:hover img {
+      width: 100%;
+      }
+
+  
+
+  /* Brain container  */
+  .brainchip-container {
+    background: rgba(196, 193, 193, 0.153);
+    /* Dark background like the original */
+    max-width: 100%;
+    /* Matches Tesla section */
+    margin: 50px auto;
+    /* Centers the box & adds spacing */
+    padding: 40px;
+    /* Adds comfortable padding */
+    border-radius: 12px;
+    /* Soft rounded corners */
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Default shadow */
+    text-align: center;
+    /* Centers all text */
+    color: rgb(11, 11, 11);
+    /* White text */
+  }
+
+  .brainchip-container h2 {
+    font-weight: 600;
+    font-size: 24px;
+    /* Slightly smaller than Tesla heading */
+    margin-bottom: 20px;
+    /* Adds space below heading */
+  }
+
+  .brainchip-container p {
+    font-size: 16px;
+    line-height: 1.6;
+    /* Improves spacing between lines */
+    margin-bottom: 15px;
+  }
+
+  .brainchip-container:hover {
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
+    /* Stronger shadow on hover */
+    transform: translateY(-5px);
+    /* Smooth pop-up effect */
+  }
+
+  /* how it work  */
+
+  .how-it-works {
+    background: rgba(146, 140, 140, 0.226);
+    /* Clean background */
+    padding: 30px;
+    /* Comfortable padding */
+    border-radius: 12px;
+    /* Soft rounded corners */
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Default subtle shadow */
+    text-align: center;
+    /* Centers the text */
+    height: 100%;
+    /* Ensures equal height for all cards */
+  }
+
+  .how-it-works h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+    /* Professional dark text */
+  }
+
+  .how-it-works ul {
+    list-style: none;
+    /* Removes default bullet points */
+    padding: 0;
+  }
+
+  .how-it-works li {
+    font-size: 16px;
+    padding: 10px;
+    background: #f8f9fa;
+    /* Light grey background for each point */
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .how-it-works li:hover {
+    background: #e9ecef;
+    /* Slightly darker background on hover */
+  }
+
+  .how-it-works:hover {
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
+    /* Stronger shadow on hover */
+    transform: translateY(-5px);
+    /* Smooth pop-up effect */
+  }
+
+
+  .caard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  /* Base button styles */
+  .btn {
+    width: 65%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Smooth transition */
+  }
+
+  /* Hover effect */
+  .btn:hover {
+
+    color: #f7f1f1;
+    /* White text on hover */
+    text-decoration: none;
+    /* Remove underline */
+    border: 2px solid #8a8989;
+    /* Add a border on hover */
+    cursor: pointer;
+    /* Change cursor to a pointer on hover */
+    box-shadow: 0 4px 8px 3px rgba(0, 0, 0, 0.2);
+    /* Add a shadow on hover */
+  }
+
+  .hover-effect {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .hover-effect:hover {
+    transform: scale(1.025);
+    /* Slightly zoom in */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    /* Add shadow effect */
+  }
+
+  .hover-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  }
+
+  .hover-card:hover {
+    transform: translateY(-10px);
+    /* Lift the card */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    /* Add a larger shadow */
+    background-color: #f8f9fa;
+    /* Light background color on hover */
+  }
+
+  /* Custom hover effect for the gray blur */
+  .gray-blur-hover-effect {
+    position: relative;
+    overflow: hidden;
+    /* Prevents the effect from spilling out of the card */
+    transition: box-shadow 0.93s ease;
+  }
+
+  .gray-blur-hover-effect::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -90%;
+    width: 100%;
+    height: 100%;
+    background: rgba(128, 128, 128, 0.5);
+    /* Gray color with transparency */
+    transition: left 0.94s ease;
+    /* Controls the speed of the movement */
+  }
+
+  .gray-blur-hover-effect:hover::after {
+    left: 100%;
+    /* Moves the gray blur from left to right */
+  }
+
+  .gray-blur-hover-effect:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    /* Optional shadow effect on hover */
+  }
+
+/* footer  */
+
+.custom-footer {
+    background-color: #222; /* Dark background for footer */
+    color: #fff; /* White text color */
+  }
+  
+  .custom-footer a {
+    color: #fff; /* Set link color to white */
+    text-decoration: none; /* Remove underline by default */
+  }
+  
+  .custom-footer a:hover {
+    color: #ff7f50; /* Change color on hover */
+    text-decoration: underline; /* Add underline on hover */
+  }
+  
+  .custom-footer i {
+    font-size: 1.3rem; /* Increase icon size */
+  }
+  
+  .custom-footer .footer-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  .custom-footer .footer-links {
+    padding-left: 0;
+    list-style-type: none;
+  }
+  
+  .custom-footer .footer-links li {
+    margin-bottom: 8px;
+  }
+  
+  .custom-footer .footer-links li a {
+    display: flex;
+    align-items: center;
+  }
+  
+  .custom-footer .footer-links i {
+    font-size: 1.4rem; /* Make icons larger */
+  }
+  
+  .footer-container {
+    width: 100%; /* Ensures the container spans the full width */
+  }
+  
+  .text-uppercase {
+    text-transform: uppercase;
+  }
+  
+  @media (max-width: 767px) {
+    .custom-footer {
+      text-align: center; /* Center content on small screens */
+    }
+  
+    .custom-footer .col-md-4 {
+      margin-bottom: 20px; /* Space out the columns on smaller screens */
+    }
+  }
+
+
+
+  /* branch page  */
+
+  .branch-container {
+    background: white;
+    max-width: 100%;
+    /* Limits width for better readability */
+    margin: 50px auto;
+    /* Centers the container and adds space above/below */
+    padding: 40px;
+    /* Adds comfortable padding */
+    border-radius: 12px;
+    /* Soft rounded corners */
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* Default shadow */
+    text-align: justify;
+    /* Centers all text */
+  }
+
+  .branch-container:hover {
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
+    /* Stronger shadow on hover */
+    transform: translateY(-5px);
+    /* Smooth pop-up effect */
+  }
+  
+  
+
+ 

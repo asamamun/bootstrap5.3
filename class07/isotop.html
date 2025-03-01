@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <a href="https://isotope.metafizzy.co/">https://isotope.metafizzy.co/ tutorial</a>
+        <hr>
+        <div class="d-flex justify-content-center ">
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" data-filter="*" class="btn btn-primary">All</button>
+                <button type="button" data-filter=".flower" class="btn btn-primary">Flower</button>
+                <button type="button" data-filter=".animal" class="btn btn-primary">Animal</button>
+                <button type="button" data-filter=".people" class="btn btn-primary">People</button>
+              </div>
+        </div>
+        <hr>
+        <div id="galleryDiv">
+            <div class="grid row">
+                <div class="grid-item col-md-3 flower">
+                    <img src="../assets/images/DSC_0001.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="grid-item col-md-3 animal">
+                    <img src="../assets/images/DSC_0002.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="grid-item col-md-3 people">
+                    <img src="../assets/images/DSC_0003.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="grid-item col-md-3 people">
+                    <img src="../assets/images/DSC_0004.jpg" alt="" class="img-fluid">
+                </div>
+                <div class="grid-item col-md-3 flower">
+                    <img src="../assets/images/DSC_0005.jpg" alt="" class="img-fluid">
+                </div>
+                
+              </div>
+        </div>
+    </div>
+
+
+    <script src="../assets/js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/5.0.0/imagesloaded.pkgd.min.js"></script>
+
+    <!-- <script src="../assets/js/isotope.pkgd.min.js"></script> -->
+    <script src="../assets/js/isotope.pkgd.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+          var $grid = $('.grid').imagesLoaded(function () {
+            $grid.isotope({
+              itemSelector: '.grid-item',
+              layoutMode: 'fitRows'
+            });
+          });
+      
+          // Filter items on button click
+          $('.btn-group button').click(function () {
+            var filterValue = $(this).attr('data-filter');
+            $grid.isotope({ filter: filterValue });
+          });
+        });
+      </script>
+</body>
+</html>
